@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/spell_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spell Name"
+                android:textColor="@color/textPrimary"
+                android:textSize="21sp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/spell_item_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st-level"
+                android:textColor="@color/textSecondary"
+                android:layout_below="@id/spell_item_name"/>
+
+            <TextView
+                android:id="@+id/spell_item_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evocation"
+                android:layout_toRightOf="@id/spell_item_level"
+                android:layout_below="@id/spell_item_name"
+                android:paddingLeft="4dp" />
+
+            <TextView
+                android:id="@+id/spell_item_concentration"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concentration"
+                android:background="@color/colorAccent"
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/spell_item_ritual"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ritual"
+                android:background="@color/colorAccent"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/spell_item_concentration"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorDiv" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_castingtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casting Time: 1 action"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Range: 150 feet"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_components"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Components: V, S, M (the powder of a crushed black pearl worth at least 500 gp)"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration: Instantaneous"
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Until the spell ends, one willing creature you touch is immune to psychic damage, any effect that would sense its emotions or read its thoughts, divination spells, and the charmed condition. The spell even foils wish spells and spells or effects of similar power used to affect the target's mind or to gain information about the target."
+                android:textColor="@color/textPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/spell_item_higherlevels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:textColor="@color/textPrimary"
+                android:text="Higher Levels. Something something."/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorDiv" />
+
+        <TextView
+            android:id="@+id/spell_item_classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bard, Wizard, Warlock"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/textSecondary"/>
+
+        <TextView
+            android:id="@+id/spell_item_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHB pg. 205"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/textSecondary"/>
+
+    </LinearLayout>
+
+</ScrollView>
